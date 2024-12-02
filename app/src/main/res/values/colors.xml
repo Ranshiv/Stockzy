@@ -7,4 +7,9 @@
     <color name="primary_light">#5C6BC0</color>
     <color name="primary_dark">#303F9F</color>
     <color name="white">#FFFFFF</color>
+        <color name="backgroundColor">#FFFFFF</color> <!-- White color, replace as needed -->
+    <color name="primaryTextColor">#000000</color><color name="primaryColor">#6200EE</color><color name="secondaryTextColor">#757575</color> <!-- Replace with your desired color -->
+
+
+
 </resources>

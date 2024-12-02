@@ -4,20 +4,23 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
+    <!-- Title TextView -->
     <TextView
-        android:layout_width="100sp"
-        android:layout_height="26sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Stockzy"
         android:textSize="24sp"
         android:fontFamily="@font/monday_spark"
-        />
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
-
+    <!-- EditText for stock symbol -->
     <EditText
         android:id="@+id/stockSymbolEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="80dp"
         android:hint="Enter Stock Symbol"
         android:inputType="text"
         android:padding="12dp"
@@ -27,30 +30,119 @@
         android:textSize="16sp"
         android:elevation="4dp" />
 
+    <!-- Button to fetch stock data -->
     <Button
         android:id="@+id/fetchStockButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/stockSymbolEditText"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="Fetch Stock Data"
-        android:padding="12dp"
         android:background="@drawable/button_custom_background"
+        android:text="Fetch Stock Data"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:fontFamily="sans-serif-medium"
-        android:elevation="6dp"
-        android:layout_gravity="center" />
+        android:padding="12dp"
+        android:elevation="6dp" />
 
-
-
-    <TextView
-        android:id="@+id/stockTextView"
+    <!-- ProgressBar while fetching data -->
+    <ProgressBar
+        android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/fetchStockButton"
-        android:layout_marginTop="56dp"
-        android:text="Stock Data"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="20dp" />
+
+    <!-- Stock data TextViews -->
+    <TextView
+        android:id="@+id/stockSymbolTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_marginTop="40dp"
+        android:text="Stock Symbol: "
         android:textSize="18sp" />
 
+    <TextView
+        android:id="@+id/openTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stockSymbolTextView"
+        android:layout_marginTop="16dp"
+        android:text="Open: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/highTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/openTextView"
+        android:layout_marginTop="16dp"
+        android:text="High: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/lowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/highTextView"
+        android:layout_marginTop="16dp"
+        android:text="Low: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lowTextView"
+        android:layout_marginTop="16dp"
+        android:text="Price: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/volumeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceTextView"
+        android:layout_marginTop="16dp"
+        android:text="Volume: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/latestTradingDayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/volumeTextView"
+        android:layout_marginTop="16dp"
+        android:text="Latest Trading Day: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/previousCloseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latestTradingDayTextView"
+        android:layout_marginTop="16dp"
+        android:text="Previous Close: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/changeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/previousCloseTextView"
+        android:layout_marginTop="16dp"
+        android:text="Change: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/changePercentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changeTextView"
+        android:layout_marginTop="16dp"
+        android:text="Change Percent: "
+        android:textSize="16sp" />
 </RelativeLayout>
