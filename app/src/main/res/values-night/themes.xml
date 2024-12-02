@@ -1,7 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Project_app" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Theme.Stockzy" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary color for the app -->
+        <item name="colorPrimary">#12181F</item>
+        <item name="colorPrimaryDark">#0C0E12</item>
+        <item name="colorAccent">#FFA500</item> <!-- Bright orange accent -->
+        <item name="android:statusBarColor">#12181F</item>
+        <item name="android:navigationBarColor">#12181F</item>
+        <item name="android:background">#1D2939</item>
     </style>
 </resources>

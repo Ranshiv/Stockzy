@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true">
-        <shape>
-            <solid android:color="@color/primary_dark" />
+        <shape android:shape="rectangle">
+            <solid android:color="#005BB5" />
             <corners android:radius="12dp" />
         </shape>
     </item>
     <item>
-        <shape>
-            <gradient
-                android:angle="45"
-                android:startColor="@color/primary"
-                android:endColor="@color/primary_light" />
+        <shape android:shape="rectangle">
+            <solid android:color="@color/buttonBg" />
             <corners android:radius="12dp" />
         </shape>
     </item>

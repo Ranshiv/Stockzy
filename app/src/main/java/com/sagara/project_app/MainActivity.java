@@ -102,5 +102,4 @@ public class MainActivity extends AppCompatActivity {
         changeTextView.setText("Change: " + stockResponse.getChange());
         changePercentTextView.setText("Change Percent: " + stockResponse.getChangePercent() + "%");
     }
-
 }

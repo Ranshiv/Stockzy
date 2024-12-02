@@ -1,9 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Project_app" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.Stockzy" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary color for the app -->
+        <item name="colorPrimary">#1D2939</item>
+        <item name="colorPrimaryDark">#12181F</item>
+        <item name="colorAccent">#007AFF</item>
+        <item name="android:statusBarColor">#1D2939</item>
+        <item name="android:navigationBarColor">#1D2939</item>
+        <item name="android:background">#F5F5F5</item>
     </style>
-
-    <style name="Theme.Project_app" parent="Base.Theme.Project_app" />
 </resources>
